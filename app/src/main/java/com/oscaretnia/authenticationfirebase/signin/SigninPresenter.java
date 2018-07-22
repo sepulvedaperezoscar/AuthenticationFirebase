@@ -18,7 +18,7 @@ public class SigninPresenter implements SigninContract.Presenter, SigninContract
             view.setEnabledView(false);
             view.displayLoader(true);
         }
-        interactor.doSignin(email, password);
+        interactor.performSignin(email, password);
     }
 
     @Override

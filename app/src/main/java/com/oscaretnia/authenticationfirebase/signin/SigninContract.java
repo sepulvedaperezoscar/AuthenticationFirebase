@@ -18,7 +18,7 @@ public interface SigninContract {
     }
 
     interface Interactor {
-        void doSignin(String email, String password);
+        void performSignin(String email, String password);
     }
 
     interface CompleteListener {

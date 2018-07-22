@@ -18,7 +18,7 @@ public class SigninInteractor implements SigninContract.Interactor {
     }
 
     @Override
-    public void doSignin(String email, String password) {
+    public void performSignin(String email, String password) {
         auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
